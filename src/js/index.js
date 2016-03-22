@@ -117,18 +117,18 @@ class Dog {
 	constructor (dogParams) {
 		// console.log(dogParams);
 		dogParams = dogParams || {};
-		// console.log(dogParams);
-    //   var defaultDogParams = {
-    //     hungry: true
-    // }
-    
-    // defaultDogParams.hungry = dogParams.hungry;
-    if (dogParams.hungry === true) {
-      this.hungry = true;
-    }	else (dogParams.hungry === undefined) {
-      this.hungry = false;
-    }
 
+  var defaultDogParams = {
+    color: "red",
+    hungry: true
+ }
+  Object.assign(defaultDogParams, dogParams);
+    // defaultDogParams.hungry = dogParams.hungry;
+    //if (dogParams.hungry === true) {
+    //   this.hungry = true;
+    // }	else { 
+    //   this.hungry = false;
+    // }
 
     this.color=dogParams.color;
 		this.hungry=dogParams.hungry;
