@@ -95,24 +95,17 @@ function expect(target) {
 class Human {
     constructor(person) {
       person = person || {};
+      this.cool = true;
     }
       
-      pet(dog) {
+    pet(dog) {
       dog.status = 'happy';
     }  
+    feed(dog) {
+      dog.hungry = 'false';
+    }
 }
 
-
-
-// class Human {
-//     constructor(person) {
-//       person = person || {};
-//       console.log('help');
-//     } 
-//     pet(dog) {
-//       dog.status='happy';
-//     }  
-//   }
 
 
 class Dog {
@@ -120,6 +113,12 @@ class Dog {
 		// console.log(dogParams);
 		dogParams = dogParams || {};
 		// console.log(dogParams);
+      var defaultDogParams = {
+        hungry: 'true'
+    }
+    
+    defaultDogParams.hungry = dogParams.hungry;
+
 		this.color=dogParams.color;
 		this.hungry=dogParams.hungry;
 		this.status='normal' || 'happy';
