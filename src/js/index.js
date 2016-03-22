@@ -81,33 +81,38 @@ function expect(target) {
 // 		return dog.status='happy';
 // 		}
 // 	}
+// class Human {
+// 	constructor (person) {
+// 		console.log(person);
+// 		person = person || {};
+// 		console.log(person);
+//     this.cool=person.cool;
+// 	}		
+// 	pet(dog) {
+// 			dog.status='happy';
+// 		}
+// ​  }
+
 class Human {
-	constructor (person) {
-		console.log(person);
-		person = person || {};
-		console.log(person);
-	}		
-	pet(dog) {
-			return 'happy';
-		}
-​}
+  constructor(person) {
+    person = person || {};
+    console.log('help');
+  } 
+  pet(dog) {
+   dog.status='happy';
+  }  
+}
 
 
 class Dog {
 	constructor (dogParams) {
-		console.log(dogParams);
-​
-		dogParams = dogParams || {} ;
-		console.log(dogParams);
-​
+		// console.log(dogParams);
+		dogParams = dogParams || {};
+		// console.log(dogParams);
 		this.color=dogParams.color;
 		this.hungry=dogParams.hungry;
 		this.status='normal' || 'happy';
-​
 	} 
-	// petSadie{
-​
-	// } 
 }
 ​
 ​
