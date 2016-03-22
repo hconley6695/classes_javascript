@@ -95,12 +95,11 @@ function expect(target) {
 class Human {
     constructor(person) {
       person = person || {};
-      console.log('help');
+    }
       
-      person.pet(dog) {
-      return 'happy';
+      pet(dog) {
+      dog.status = 'happy';
     }  
-  }
 }
 
 
@@ -124,22 +123,8 @@ class Dog {
 		this.color=dogParams.color;
 		this.hungry=dogParams.hungry;
 		this.status='normal' || 'happy';
-	}
-//  animal(action) {
-  //  this.hungry=true;
-    //} 
   }
-​
-​
-​
-
-
-
-
-
-
-
-
+}
 // â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘
 //                DO NOT MOTIFY BELOW THIS LIKE
 
