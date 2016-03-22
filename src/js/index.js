@@ -118,14 +118,20 @@ class Dog {
 		// console.log(dogParams);
 		dogParams = dogParams || {};
 		// console.log(dogParams);
-      var defaultDogParams = {
-        hungry: true
-    }
+    //   var defaultDogParams = {
+    //     hungry: true
+    // }
     
-    defaultDogParams.hungry = dogParams.hungry;
+    // defaultDogParams.hungry = dogParams.hungry;
+    if (dogParams.hungry === true) {
+      this.hungry = true;
+    }	else (dogParams.hungry === undefined) {
+      this.hungry = false;
+    }
 
-		this.color=dogParams.color;
-		this.hungry=defaultDogParams.hungry;
+
+    this.color=dogParams.color;
+		this.hungry=dogParams.hungry;
 		this.status='normal' || 'happy';
   }
 }
