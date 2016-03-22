@@ -81,6 +81,17 @@ function expect(target) {
 // 		return dog.status='happy';
 // 		}
 // 	}
+class Human {
+	constructor (person) {
+		console.log(person);
+		person = person || {};
+		console.log(person);
+	}		
+	pet(dog) {
+			return 'happy';
+		}
+​}
+
 
 class Dog {
 	constructor (dogParams) {
@@ -101,21 +112,7 @@ class Dog {
 ​
 ​
 ​
-class Human {
-	constructor (person) {
-​
-		person = person || {};
-		console.log(person);
 
-		person.pet(dog) {
-			var 'happy' = dog.status;
-		}
-​
-​
-		}
-//		pet(action) {
-​
-	}
 
 
 
